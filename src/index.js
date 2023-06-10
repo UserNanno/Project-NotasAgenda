@@ -7,6 +7,7 @@ const session = require('express-session');
 // Inicializations
 
 const app = express();
+require('./database');
 
 // settings -> Configuraciones
 
