@@ -2,10 +2,10 @@
 const express = require('express')  // FACILITA LA CREACIÓN DE RUTAS
 const router = express.Router();
 router.get('/', (request, response) =>{
-    response.send('Index');
+    response.render('index');
 });
 
 router.get('/about', (request, response)=>{
-    response.send('About');
+    response.render('about');
 });
 module.exports = router;
