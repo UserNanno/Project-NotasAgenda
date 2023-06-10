@@ -8,7 +8,8 @@
     passport -> Sirve para la autenticación                  
     passport-local -> Sirve para la autenticación      
     bcryptjs -> Modulo que permite aplicar una algortimo a un String y poder convertirlo en un HASH, así se cifra la contraseña
-    connect-flash -> Módulo para poder enviar mensajes entre múltiples vistas (Alertas en contraseñas, notificaciones, etc)                   
+    connect-flash -> Módulo para poder enviar mensajes entre múltiples vistas (Alertas en contraseñas, notificaciones, etc)
+    nodemon -D -> El modulo sirve para ejecutar el servidor sin la necesidad de estar cancelando y volviendo a ejecutar                    
 
 # Folder src (Codigo del Frontend y del servidor)
 
