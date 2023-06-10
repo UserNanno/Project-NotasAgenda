@@ -1,8 +1,8 @@
 const express = require('express');
 const path = require('path');
 const exphbs = require('express-handlebars');
-const methodOverride = require('method-override')
-const session = require('express-session')
+const methodOverride = require('method-override');
+const session = require('express-session');
 
 // Inicializations
 
@@ -11,10 +11,10 @@ const app = express();
 // settings -> Configuraciones
 
 app.set('port', process.env.PORT || 3000);
-app.set('views', path.join(__dirname, 'views'))
-app.engine('.hbs', exphbs({
+app.set('views', path.join(__dirname, 'views'));
+app.engine('.hbs', exphbs.engine({                         // No se usa solo exphbs, sino exphbs.engine
     defaultLayout: 'main',
-    layaoutDir: path.join(app.get('views'), 'layouts'),
+    layoutsDir: path.join(app.get('views'), 'layouts'),
     partialsDir: path.join(app.get('views'), 'partials'),
     extname: '.hbs'
 }));
@@ -38,6 +38,9 @@ app.use(session({
 
 // Routes -> Para las rutas
 
+app.use(require('./routes/index'));
+app.use(require('./routes/notes'));
+app.use(require('./routes/users'));
 
 
 // Static Files -> Configurar donde estará la carpeta de los archivos estáticos

@@ -22,3 +22,7 @@
     helpers -> Para crear cualquier función que podamos usar en cualquier parte del codigo
     config -> Almacena distintos archivos (base de datos, variables de configuracion del entorno, configuracion de autenticación,
             configuracion de ciertos modulos )
+
+# package.json
+
+    "dev": "nodemon src/index.js" //  CONFIGURACION NECESARIA PARA EJECUTAR NODEMON
