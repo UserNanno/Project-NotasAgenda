@@ -3,11 +3,11 @@ const express = require('express')  // FACILITA LA CREACIÓN DE RUTAS
 const router = express.Router();
 
 router.get('/users/signin', (request, response)=>{
-    response.send('Ingresando a la app');
+    response.render('users/signin');
 });
 
 router.get('/users/signup', (request, response)=>{
-    response.send('Formulario de autenticación');
+    response.render('users/signup');
 })
 
 module.exports = router;
