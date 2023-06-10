@@ -1,0 +1,23 @@
+# modulos ( requirements)
+
+    express -> Framework de NodeJs
+    express-handlebarns -> Complemento de Express, Es un motor de plantillas que sirve para integrar plantillas dentro de Express
+    express-session -> Complemente de Express, Sirve para almacenar datos en una sesion de cada usuario
+    method-override -> Metodo para extender la funcionalidad de los formularios y enviar distintos métodos (POST, GET, DELETE, PUT)
+    mongoose -> Módulo que permite unir Express con MongoDb, es decir, el módulo de conexión
+    passport -> Sirve para la autenticación                  
+    passport-local -> Sirve para la autenticación      
+    bcryptjs -> Modulo que permite aplicar una algortimo a un String y poder convertirlo en un HASH, así se cifra la contraseña
+    connect-flash -> Módulo para poder enviar mensajes entre múltiples vistas (Alertas en contraseñas, notificaciones, etc)                   
+
+# Folder src (Codigo del Frontend y del servidor)
+
+    index.js -> Archivo principal de la aplicacion
+    database.js -> Para tener la conexión a la base de datos
+    views -> Almacena todas las vistas HTML (el motor de plantillas handlebarns) y esto se envía al navegador
+    routes -> Crea las URL del servidor
+    public -> Para insertar archivos estáticos (imagenes, fuentes, css, js, etc)
+    models -> Definir como lucirán los datos dentro de la base de datos
+    helpers -> Para crear cualquier función que podamos usar en cualquier parte del codigo
+    config -> Almacena distintos archivos (base de datos, variables de configuracion del entorno, configuracion de autenticación,
+            configuracion de ciertos modulos )
