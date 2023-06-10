@@ -45,7 +45,7 @@ app.use(require('./routes/users'));
 
 // Static Files -> Configurar donde estará la carpeta de los archivos estáticos
 
-
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Inicializar servidor 
 

@@ -2,5 +2,8 @@
 const express = require('express')  // FACILITA LA CREACIÓN DE RUTAS
 const router = express.Router();
 
+router.get('/notes', (request, response) =>{
+    response.send('Notes from database');
+});
 
 module.exports = router;
